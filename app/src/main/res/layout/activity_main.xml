@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yam.myapplication.MainActivity"
+   >
+
+
+
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/botonminombre">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/nombre_completo"
+        android:ems="10"
+        android:id="@+id/miNombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/midatePicker"
+        android:layout_alignEnd="@+id/midatePicker" />
+
+</android.support.design.widget.TextInputLayout>
+
+
+
+
+    <DatePicker
+        android:id="@+id/midatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/botonminombre"
+        android:layout_centerInParent="true"/>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mibotontelefono"
+        android:layout_below="@+id/midatePicker"
+        android:layout_marginTop="40dp"
+
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/miTelefono"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/app_telefono"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mibotonemail"
+        android:layout_below="@id/mibotontelefono"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/miEmail"
+            android:layout_alignTop="@+id/miTelefono"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/miTelefono"
+            android:layout_alignEnd="@+id/miTelefono"
+            android:hint="@string/app_Email"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mibotondescripcion"
+        android:layout_below="@id/mibotonemail"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/miDescripcion"
+            android:layout_below="@+id/miEmail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/miEmail"
+            android:layout_alignEnd="@+id/miEmail"
+            android:hint="@string/app_DescripcionContacto"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/siguiente"
+        android:id="@+id/miBoton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/text_BotonSiguiente"
+       android:background="@color/BotonSiguiente"
+        android:layout_marginTop="49dp"
+        android:onClick="pasar_contacto" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/mibotontelefono"
+        android:layout_marginTop="-70dp"
+        android:layout_marginLeft="195dp"
+        android:background="@color/BotonSiguiente"
+        android:textColor="@color/text_BotonSiguiente"
+
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/mibotontelefono"
+        android:layout_marginTop="-70dp"
+        android:layout_marginLeft="70dp"
+        android:background="@color/BotonSiguiente"
+        android:textColor="@color/text_BotonSiguiente"
+
+
+
+
+        />
+
+
+</RelativeLayout>
+
