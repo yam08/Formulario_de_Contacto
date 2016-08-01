@@ -7,4 +7,5 @@
     <string name="nombre_completo">Nombre completo</string>
     <string name="fecha">Fecha de nacimiento</string>
     <string name="siguiente">Siguiente</string>
+    <string name="ok">Ok</string>
 </resources>

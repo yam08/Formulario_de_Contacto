@@ -5,30 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.yam.myapplication.MainActivity"
-   >
+    >
 
 
 
 
-<android.support.design.widget.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/botonminombre">
-
-    <EditText
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="@string/nombre_completo"
-        android:ems="10"
-        android:id="@+id/miNombre"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/midatePicker"
-        android:layout_alignEnd="@+id/midatePicker" />
+        android:id="@+id/botonminombre">
 
-</android.support.design.widget.TextInputLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/nombre_completo"
+            android:ems="10"
+            android:id="@+id/miNombre3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/midatePicker"
+            android:layout_alignEnd="@+id/midatePicker" />
+
+    </android.support.design.widget.TextInputLayout>
 
 
 
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:ems="10"
-            android:id="@+id/miTelefono"
+            android:id="@+id/miTelefono3"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/miEmail"
+            android:id="@+id/miEmail3"
             android:layout_alignTop="@+id/miTelefono"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -105,7 +105,7 @@
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:ems="10"
-            android:id="@+id/miDescripcion"
+            android:id="@+id/miDescripcion3"
             android:layout_below="@+id/miEmail"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
